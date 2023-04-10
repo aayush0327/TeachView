@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradiant_color"
+    android:layout_height="match_parent"
+    tools:context=".student_login">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/student_remove" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Student"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="#E61A31FF"
+            app:endIconMode="clear_text"
+            app:endIconTint="#000000"
+            app:hintTextColor="#000000"
+            app:placeholderText="ex. abc@cde.com"
+            app:placeholderTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:startIconDrawable="@drawable/baseline_alternate_email_24"
+            app:startIconTint="#000000"
+            app:suffixTextColor="#000000">
+
+            <EditText
+                android:id="@+id/loginemail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:padding="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:hint="Password"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeColor="#0019FF"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="#000000"
+            app:placeholderTextColor="#343030"
+            app:startIconDrawable="@drawable/password"
+            app:startIconTint="#000000">
+
+            <EditText
+                android:id="@+id/loginpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:longClickable="false"
+                android:padding="15dp"
+                android:textColorLink="#000000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Cannot copy password using longClickable -->
+
+
+        <TextView
+            android:id="@+id/forgotPass"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="50dp"
+            android:clickable="true"
+            android:gravity="right"
+            android:text="Forgot Password?"
+            android:textColor="#028CFA"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="500dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/student_login"
+            android:layout_width="153dp"
+            android:layout_height="47dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/custom_dialog2"
+            app:backgroundTint="@color/button"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/student_register"
+            android:layout_width="153dp"
+            android:layout_height="47dp"
+            android:background="@drawable/custom_dialog1"
+            app:backgroundTint="@color/button"
+            android:text="Register" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

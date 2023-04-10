@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1002095386513",
+    "project_id": "techview-c464c",
+    "storage_bucket": "techview-c464c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002095386513:android:dcd1c40a4f05f9c4684430",
+        "android_client_info": {
+          "package_name": "com.example.techview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002095386513-pc2817divgj00mneselflv3rkomvqsin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.techview",
+            "certificate_hash": "9266a841fd85a15c6a5006077e4bde81f286d470"
+          }
+        },
+        {
+          "client_id": "1002095386513-8t54hc0dja4jf7h1fe2hj1a40fd5tur0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6woOSo2N2IfnkLAWISHLGXhbqcX2CaYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002095386513-8t54hc0dja4jf7h1fe2hj1a40fd5tur0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
